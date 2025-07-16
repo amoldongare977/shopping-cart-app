@@ -43,7 +43,7 @@ const cartSlice = createSlice({
 
 export const { addProduct, removeProduct, resetCart } = cartSlice.actions
 
-// Selector to calculate bill with offers and savings
+// calculate bill with offers and savings
 export const selectBill = (state) => {
     const cart = state.cart.cart
     const prices = state.cart.products
